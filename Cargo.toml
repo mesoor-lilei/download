@@ -4,6 +4,19 @@ version = "0.1.0"
 authors = ["Li Lei <this.lilei@gmail.com>"]
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+tokio = { version = "1.17.0", features = ["full"] }
+hyper = { version = "0.14.18", features = ["full"] }
+hyper-tls = "0.5.0"
+anyhow = "1.0.56"
+lazy_static = "1.4.0"
+
+[dependencies.clap]
+version = "3.1.9"
+default-features = false
+features = ["std", "cargo"]
+
+[dependencies.uuid]
+version = "0.8.2"
+default-features = false
+features = ["v4"]
